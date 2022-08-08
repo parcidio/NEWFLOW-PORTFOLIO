@@ -1,0 +1,10 @@
+.header__container {
+    border-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: left;
+    border-bottom: 1px solid;
+    height: 50vh;
+    width: fit-content;
+}
