@@ -1,13 +1,15 @@
-import React from "react";
-import { Nav, Meta } from "../components/ExportComponent";
-import styles from "../styles/Layout.module.css";
+//IMPORTS
+import { Nav, Meta } from "../components/ExportComponent"; //importing the navbar and the meta data (head) components
+import styles from "../styles/Layout.module.css"; //Layout style
 
 const Layout = ({ children }) => {
   return (
     <>
       <Meta />
       <Nav />
+      {/* all the components above will be present in all the pages */}
       <div className={styles.container}>
+        {/* all the components inse this container will be dynamic to their respective page */}
         <main className={styles.main}>{children}</main>
       </div>
     </>
