@@ -1,0 +1,42 @@
+.about__container {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.about__container p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: var(--muted-text);
+    text-align: left;
+}
+
+.about__pargraph__bolded {
+    border-bottom: .3rem solid;
+    padding-bottom: .1rem;
+    border-color: var(--muted-text);
+}
+
+.about__pargraph__underlined {
+    color: var(--white);
+    border-bottom: .3rem solid;
+    padding-bottom: .1rem;
+    border-color: var(--muted-text);
+    text-decoration-thickness: 0.3rem;
+}
+
+.about__pargraph__underlined:hover {
+    border-color: var(--pink);
+    cursor: pointer;
+}
+
+.about__pargraph__readmore {
+    display: none;
+}
+
+.about__readMoreButton {
+    cursor: pointer;
+}
+
+.about__readMoreButton:hover {
+    color: var(--muted-text);
+}
