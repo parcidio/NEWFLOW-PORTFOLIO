@@ -1,0 +1,16 @@
+.tools {
+    padding: 0;
+}
+
+.tools_container {
+    padding-bottom: 2rem;
+}
+
+.tools__tabPanel {
+    display: flex;
+}
+
+.tools__tool {
+    margin: 1rem;
+    border-radius: 1rem;
+}

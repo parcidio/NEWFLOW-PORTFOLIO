@@ -4,13 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 :root {
     /* Colors */
-    --black: #111111;
+    --black: #0e0e0e;
     --white: #FFFFFF;
     --light: #F6F6F6;
     --muted-text: #B1B1B1;
     --gray: #2E2E2E;
     --pink: #FF93A0;
     --blue: #0D42AA;
+    --light-gray: rgba(166, 166, 166, 0.5);
     /* Screensize dimensions */
     --container-width-lg: 75%;
     --container-width-md: 75%;
@@ -26,7 +27,8 @@ body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Space Mono', monospace;
-    font-size: 10pt;
+    font-size: 11pt;
+    font-weight: 400;
 }
 
 ::-webkit-scrollbar {

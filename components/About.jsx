@@ -1,68 +1,57 @@
-import aboutStyle from "../styles/About.module.css";
+//IMPORTS
+import aboutStyle from "../styles/About.module.css"; //About style
 import { useState } from "react";
 
 const About = () => {
-  const [readMore, setReadMore] = useState(true);
+  const [readMore, setReadMore] = useState(true); //this state controls the behavior of the readmore/ readless text
   return (
     <div className={aboutStyle.about__container}>
       <p>
         {" "}
-        I’m{" "}
-        <span className={aboutStyle.about__pargraph__bolded}>
-          Parcidio Andre
-        </span>
-        , a Namibia based{" "}
-        <span className={aboutStyle.about__pargraph__bolded}>
-          software developer & designer
-        </span>{" "}
-        with over 2 years of experience. I specialise in fullstack development
-        for mobile and web-based applications with a focus on simplicity &
+        I’m Parcidio Andre , a Namibia based software developer & designer with
+        over 2 years of experience. I specialise in fullstack development for
+        mobile and web-based applications with a focus on simplicity &
         usability.
       </p>
       <p>
         {" "}
-        I’m passionate about{" "}
-        <span className={aboutStyle.about__pargraph__bolded}>
-          design, research and technology{" "}
-        </span>
-        and how they can converge to create experiences that solve problems. I’m
-        currently looking to expand my reach on web development through
-        <span className={aboutStyle.about__pargraph__bolded}>
-          {" "}
-          collaboration with other professionals{" "}
-        </span>
-        in the industry.
-      </p>
-      <p>
-        {" "}
-        I have worked on{" "}
-        <span className={aboutStyle.about__pargraph__underlined}>
-          personal projects{" "}
-        </span>
-        which have helped me to improve my project management skills. Before
-        that, I was awarded a{" "}
-        <span className={aboutStyle.about__pargraph__bolded}>
-          bachelor honours degree in software development{" "}
-        </span>
-        by the{" "}
-        <span className={aboutStyle.about__pargraph__underlined}>
-          International University of Management (IUM)
-        </span>
-        , which at a later stage, I ended up working for as a Junior developer,
-        for a little period, as part of a team, to create their bespoke School
-        MIS.
-      </p>
-      <p>
-        {" "}
-        Before working at IUM, I spent some time working as an IT officer itern
-        at the{" "}
-        <span className={aboutStyle.about__pargraph__underlined}>
-          Namibia Institute of Public Administration and Management (NIPAM)
-        </span>
-        , where I helped with the maintenance of the company ICT insfructure
-        (network, servers, workstations, web administration, helpdesk).
+        I’m passionate about design, research and technology and how they can
+        converge to create experiences that solve problems. I’m currently
+        looking to expand my reach on web development through collaboration with
+        other professionals in the industry.
       </p>
       <div className={readMore ? aboutStyle.about__pargraph__readmore : ""}>
+        {/* Here is the delimitation of the dynamic readMore/ readLess text */}
+        <p>
+          {" "}
+          I have worked on{" "}
+          <span className={aboutStyle.about__pargraph__underlined}>
+            personal projects{" "}
+          </span>
+          which have helped me to improve my project management skills. Before
+          that, I was awarded a{" "}
+          <span className={aboutStyle.about__pargraph__bolded}>
+            bachelor honours degree in software development{" "}
+          </span>
+          by the{" "}
+          <span className={aboutStyle.about__pargraph__underlined}>
+            International University of Management (IUM)
+          </span>
+          , which at a later stage, I ended up working for as a Junior
+          developer, for a little period, as part of a team, to create their
+          bespoke School MIS.
+        </p>
+        <p>
+          {" "}
+          Before working at IUM, I spent some time working as an IT officer
+          itern at the{" "}
+          <span className={aboutStyle.about__pargraph__underlined}>
+            Namibia Institute of Public Administration and Management (NIPAM)
+          </span>
+          , where I helped with the maintenance of the company ICT insfructure
+          (network, servers, workstations, web administration, helpdesk).
+        </p>
+
         <p>
           {" "}
           Currently, you can also find me working on my own projects: Cabula, an

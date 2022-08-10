@@ -1,0 +1,50 @@
+.social_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: var(--muted-text);
+    padding: 0;
+}
+
+.social_links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+.social_links li:hover {
+    background: var(--gray);
+    cursor: pointer;
+}
+
+.social_contacts {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.social_contacts li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--light-gray);
+    padding: 5px 15px;
+    height: fit-content;
+    border-radius: 2rem;
+    background: var(--gray);
+    color: var(--muted-text);
+}
+
+.social_contacts li:hover {
+    color: var(--white);
+    background: var(--light-gray);
+    cursor: pointer;
+}

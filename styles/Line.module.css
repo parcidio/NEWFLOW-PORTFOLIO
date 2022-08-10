@@ -1,0 +1,6 @@
+.line {
+    min-height: .3rem;
+    background: linear-gradient(45deg, red, #0D42AA, purple, #FF93A0);
+    border-radius: 2rem;
+    margin-block: 50px;
+}

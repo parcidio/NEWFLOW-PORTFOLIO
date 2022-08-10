@@ -1,5 +1,5 @@
 //IMPORTS
-import { Nav, Meta } from "../components/ExportComponent"; //importing the navbar and the meta data (head) components
+import { Nav, Meta, Footer } from "../components/ExportComponent"; //importing the navbar and the meta data (head) components
 import styles from "../styles/Layout.module.css"; //Layout style
 
 const Layout = ({ children }) => {
@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
         {/* all the components inse this container will be dynamic to their respective page */}
         <main className={styles.main}>{children}</main>
       </div>
+      <Footer />
     </>
   );
 };
