@@ -21,6 +21,7 @@
 
 .social_links li:hover {
     background: var(--gray);
+    /* background: linear-gradient(45deg, red, #0D42AA, purple, #FF93A0); */
     cursor: pointer;
 }
 
@@ -46,5 +47,6 @@
 .social_contacts li:hover {
     color: var(--white);
     background: var(--light-gray);
+    /* background: linear-gradient(45deg, red, #0D42AA, purple, #FF93A0); */
     cursor: pointer;
 }

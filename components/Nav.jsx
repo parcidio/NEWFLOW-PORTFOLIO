@@ -1,5 +1,6 @@
 // IMPORTS
 import navStyle from "../styles/Nav.module.css"; //Navigation bar style
+import Link from "next/link";
 import { useState } from "react"; // React state
 import { BsFillBrightnessHighFill, BsMoonFill } from "react-icons/bs"; //React icons - theme
 
@@ -12,30 +13,36 @@ const Nav = () => {
       <div className={navStyle.nav__links}>
         {/* this holds all the links of the navbar */}
         <ul>
-          <li
-            className={`Nav_nav__link__zSE_b ${
-              activeLink === "home" ? navStyle.nav__link_active : ""
-            }`}
-            onClick={() => setActiveLink("home")}
-          >
-            Home
-          </li>
-          <li
-            className={`Nav_nav__link__zSE_b ${
-              activeLink === "projects" ? navStyle.nav__link_active : ""
-            }`}
-            onClick={() => setActiveLink("projects")}
-          >
-            Projects
-          </li>
-          <li
-            className={`Nav_nav__link__zSE_b ${
-              activeLink === "contact" ? navStyle.nav__link_active : ""
-            }`}
-            onClick={() => setActiveLink("contact")}
-          >
-            Contact
-          </li>
+          <Link href="/">
+            <li
+              className={`Nav_nav__link__zSE_b ${
+                activeLink === "home" ? navStyle.nav__link_active : ""
+              }`}
+              onClick={() => setActiveLink("home")}
+            >
+              Home
+            </li>
+          </Link>
+          <Link href="/projects">
+            <li
+              className={`Nav_nav__link__zSE_b ${
+                activeLink === "projects" ? navStyle.nav__link_active : ""
+              }`}
+              onClick={() => setActiveLink("projects")}
+            >
+              Projects
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li
+              className={`Nav_nav__link__zSE_b ${
+                activeLink === "contact" ? navStyle.nav__link_active : ""
+              }`}
+              onClick={() => setActiveLink("contact")}
+            >
+              Contact
+            </li>
+          </Link>
           <li
             className={`Nav_nav__link__zSE_b ${navStyle.nav__link_active}`}
             onClick={() => setDarkTheme((previousTheme) => !previousTheme)}

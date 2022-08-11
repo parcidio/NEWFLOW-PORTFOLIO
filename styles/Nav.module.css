@@ -9,12 +9,19 @@
     border-color: var(--gray);
     position: fixed;
     z-index: 2;
-    background-color: var(--black);
+    background: var(--black);
 }
 
 .nav__logo {
     font-family: 'Monofett', cursive;
     font-size: 24pt;
+    filter: drop-shadow(16px 16px 20px var(--white));
+}
+
+.nav__logo:hover {
+    color: purple;
+    filter: drop-shadow(16px 16px 30px purple);
+    cursor: pointer;
 }
 
 .nav__links ul {

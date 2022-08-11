@@ -33,27 +33,56 @@ const Tools = () => {
           </TabList>
           <TabPanel>
             <div className={toolsStyle.tools__tabPanel}>
-              <Tool image="/tool-react.png" styles={toolsStyle.tools__tool} />
-              <Tool image="/tool-nodejs.png" styles={toolsStyle.tools__tool} />
-              <Tool image="/tool-django.png" styles={toolsStyle.tools__tool} />
-              <Tool image="/tool-unity.png" styles={toolsStyle.tools__tool} />
+              <Tool
+                image="/tool-react.png"
+                styles={toolsStyle}
+                tooltipText="React"
+              />
+              <Tool
+                image="/tool-nodejs.png"
+                styles={toolsStyle}
+                tooltipText="Nodejs"
+              />
+              <Tool
+                image="/tool-django.png"
+                styles={toolsStyle}
+                tooltipText="Django"
+              />
+              <Tool
+                image="/tool-unity.png"
+                styles={toolsStyle}
+                tooltipText="Unity"
+              />
             </div>
             <p>...My programming arsenal...</p>
           </TabPanel>
           <TabPanel>
             <div className={toolsStyle.tools__tabPanel}>
-              <Tool image="/tool-figma.png" styles={toolsStyle.tools__tool} />
+              <Tool
+                image="/tool-figma.png"
+                styles={toolsStyle}
+                tooltipText="Figma"
+              />
               <Tool
                 image="/tool-lucidspark.png"
-                styles={toolsStyle.tools__tool}
+                styles={toolsStyle}
+                tooltipText="Lucidspark"
               />
             </div>
             <p>...A collection of apps I normally use in idea design flow...</p>
           </TabPanel>
           <TabPanel>
             <div className={toolsStyle.tools__tabPanel}>
-              <Tool image="/tool-github.png" styles={toolsStyle.tools__tool} />
-              <Tool image="/tool-notion.png" styles={toolsStyle.tools__tool} />
+              <Tool
+                image="/tool-github.png"
+                styles={toolsStyle}
+                tooltipText="Github"
+              />
+              <Tool
+                image="/tool-notion.png"
+                styles={toolsStyle}
+                tooltipText="Notion"
+              />
             </div>
             <p>...A collection of apps I normally use to organise my work...</p>
           </TabPanel>

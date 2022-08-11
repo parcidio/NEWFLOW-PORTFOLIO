@@ -1,7 +1,7 @@
 .header__container {
     display: flex;
     align-items: center;
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 0;
     justify-content: left;
     border: 2px solid;
     border-color: var(--white);
@@ -15,12 +15,14 @@
 }
 
 .header__text {
-    width: 50%;
+    width: 30%;
+    text-align: right;
+    padding: 3rem;
 }
 
 .header__text small {
     font-weight: thin;
-    font-size: large;
+    font-size: larger;
     color: var(--muted-text);
     line-height: 3rem;
     padding: 0;
@@ -28,7 +30,7 @@
 
 .header__text h1 {
     font-weight: bolder;
-    font-size: 38pt;
+    font-size: 48pt;
 }
 
 .header__imageContainer {
