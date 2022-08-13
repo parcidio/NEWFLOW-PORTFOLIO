@@ -6,19 +6,19 @@
     padding-bottom: 2rem;
 }
 
-.experience__container {
+.experience_container {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
 }
 
-.experience__container ul {
+.experience_container ul {
     list-style: none;
     line-height: 3rem;
     padding: 0;
 }
 
-.experience__container__institution {
+.experience_container_institution {
     color: var(--muted-text);
 }
 

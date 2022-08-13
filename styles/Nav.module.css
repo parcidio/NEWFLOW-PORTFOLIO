@@ -16,6 +16,8 @@
     font-family: 'Monofett', cursive;
     font-size: 24pt;
     filter: drop-shadow(16px 16px 20px var(--white));
+    color: var(--white);
+    text-shadow: 0 0 7px purple, 0 0 102px purple, 0 0 151px purple;
 }
 
 .nav__logo:hover {
@@ -44,5 +46,5 @@
 
 .nav__link_active {
     background: var(--gray);
-    color: var(--light);
+    color: var(--white);
 }

@@ -3,10 +3,17 @@ import navStyle from "../styles/Nav.module.css"; //Navigation bar style
 import Link from "next/link";
 import { useState } from "react"; // React state
 import { BsFillBrightnessHighFill, BsMoonFill } from "react-icons/bs"; //React icons - theme
+import { useEffect } from "react";
+import { setTheme } from "./setTheme";
 
 const Nav = () => {
   const [activeLink, setActiveLink] = useState("home"); //this state has the role of determining if a link is active or not
   const [darkTheme, setDarkTheme] = useState(true);
+
+  useEffect(() => {
+    setTheme(darkTheme);
+  }, [darkTheme]);
+
   return (
     <nav className={navStyle.nav}>
       <div className={navStyle.nav__logo}>NF</div>

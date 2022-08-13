@@ -1,7 +1,7 @@
-import React from "react";
+import styles from "../styles/Projects.module.css";
 
 const projects = () => {
-  return <div>projects</div>;
+  return <div className={styles.container}>projects</div>;
 };
 
 export default projects;

@@ -5,6 +5,7 @@ import {
   Social,
   Experience,
   Tools,
+  Academics,
 } from "../components/ExportComponent";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Social />
       <Experience />
+      <Academics />
       <Tools />
     </div>
   );

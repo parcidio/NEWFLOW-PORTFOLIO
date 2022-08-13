@@ -1,5 +1,6 @@
 .tools {
     padding: 0;
+    color: var(--white);
 }
 
 .tools_container {

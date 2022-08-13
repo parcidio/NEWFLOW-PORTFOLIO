@@ -1,6 +1,7 @@
 //IMPORTS
 import aboutStyle from "../styles/About.module.css"; //About style
 import { useState } from "react";
+import Link from "next/link";
 
 const About = () => {
   const [readMore, setReadMore] = useState(true); //this state controls the behavior of the readmore/ readless text
@@ -26,8 +27,8 @@ const About = () => {
           {" "}
           I have worked on{" "}
           <span className={aboutStyle.about__pargraph__underlined}>
-            personal projects{" "}
-          </span>
+            personal projects
+          </span>{" "}
           which have helped me to improve my project management skills. Before
           that, I was awarded a{" "}
           <span className={aboutStyle.about__pargraph__bolded}>
@@ -35,7 +36,9 @@ const About = () => {
           </span>
           by the{" "}
           <span className={aboutStyle.about__pargraph__underlined}>
-            International University of Management (IUM)
+            <Link href="http://www.ium.edu.na/">
+              International University of Management (IUM)
+            </Link>
           </span>
           , which at a later stage, I ended up working for as a Junior
           developer, for a little period, as part of a team, to create their
@@ -46,7 +49,9 @@ const About = () => {
           Before working at IUM, I spent some time working as an IT officer
           itern at the{" "}
           <span className={aboutStyle.about__pargraph__underlined}>
-            Namibia Institute of Public Administration and Management (NIPAM)
+            <Link href="https://www.nipam.na/">
+              Namibia Institute of Public Administration and Management (NIPAM)
+            </Link>
           </span>
           , where I helped with the maintenance of the company ICT insfructure
           (network, servers, workstations, web administration, helpdesk).

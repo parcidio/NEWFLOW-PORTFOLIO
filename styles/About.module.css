@@ -29,6 +29,7 @@
 
 .about__readMoreButton {
     cursor: pointer;
+    color: var(--white)
 }
 
 .about__readMoreButton:hover {

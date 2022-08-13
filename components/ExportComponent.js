@@ -7,3 +7,4 @@ export { default as Social } from "./Social";
 export { default as Experience } from "./Experience";
 export { default as Tools } from "./Tools";
 export { default as Footer } from "./Footer";
+export { default as Academics } from "./Academics";

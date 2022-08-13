@@ -18,6 +18,7 @@
     width: 30%;
     text-align: right;
     padding: 3rem;
+    color: var(--white)
 }
 
 .header__text small {
