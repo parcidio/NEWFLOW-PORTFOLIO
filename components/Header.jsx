@@ -9,10 +9,11 @@ const Header = () => {
         <h1>Software Developer,</h1>
         <small>creating clean and intuitive applications. </small>
       </div>
+      <div className={headerStyle.header__container__line}></div>
       <div className={headerStyle.header__imageContainer}>
         <Image
           className={headerStyle.header__image}
-          src="/portfolio_pic.jpeg"
+          src="/profile_picture.jpeg"
           alt="Profile picture"
           layout="fill"
           width={200}

@@ -44,3 +44,10 @@
     color: white;
     background: linear-gradient(45deg, red, #0D42AA, purple, #FF93A0);
 }
+
+.contact__form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 40%;
+    max-height: 40%;
+}

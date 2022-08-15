@@ -11,6 +11,7 @@
     --gray: #2E2E2E;
     --pink: #FF93A0;
     --blue: #0D42AA;
+    --shadow: rgba(166, 166, 166, 0.5);
     --light-gray: rgba(166, 166, 166, 0.5);
     /* Screensize dimensions */
     --container-width-lg: 75%;
@@ -30,6 +31,7 @@
     --gray: #2E2E2E;
     --pink: #FF93A0;
     --blue: #0D42AA;
+    --purple: #a11b9c;
     --light-gray: rgba(166, 166, 166, 0.5);
     /* Screensize dimensions */
     --container-width-lg: 75%;
