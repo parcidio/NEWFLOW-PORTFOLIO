@@ -15,7 +15,8 @@
 }
 
 .nav__logo {
-    font-family: 'Monofett', cursive;
+    /* font-family: 'Monofett', cursive; */
+    font-family: 'Space Mono', monospace;
     font-size: 24pt;
     filter: drop-shadow(16px 16px 20px var(--white));
     color: var(--white);

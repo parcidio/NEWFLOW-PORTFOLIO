@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <nav className={navStyle.nav}>
-      <div className={navStyle.nav__logo}>NF</div>
+      <div className={navStyle.nav__logo}>...</div>
       <div className={navStyle.nav__links}>
         {/* this holds all the links of the navbar */}
         <ul>
