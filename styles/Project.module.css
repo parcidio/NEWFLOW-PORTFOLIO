@@ -1,0 +1,58 @@
+.project {
+    width: 42%;
+    border-color: var(--white);
+    border: .1rem solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.project__description {
+    color: var(--muted-text);
+    text-align: left;
+}
+
+.project__button {
+    color: var(--white);
+    background: linear-gradient(45deg, #FF93A0, #0D42AA);
+    padding: .5rem;
+    width: fit-content;
+    border: none;
+    border-radius: .5rem;
+    margin-block: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.project__imageContainer {
+    margin-block: 1rem;
+}
+
+.project__toolList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project__toolList * {
+    padding-right: 1rem;
+}
+
+.image {
+    border-radius: .5rem;
+}
+
+.project__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__progress {
+    padding: .5rem;
+    padding-block: 0;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color: var(--black);
+}

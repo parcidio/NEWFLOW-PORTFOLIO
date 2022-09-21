@@ -32,17 +32,15 @@
     padding: .5rem 2rem;
     width: 100%;
     border-radius: .5rem;
-    border-color: transparent;
+    border: none;
     margin-bottom: 1rem;
-    background-color: var(--gray);
-    line-height: 2.5rem;
     font-size: 1.2rem;
     color: var(--muted-text);
 }
 
 .contact__form button {
-    color: white;
-    background: linear-gradient(45deg, red, #0D42AA, purple, #FF93A0);
+    color: var(--white);
+    background: linear-gradient(45deg, #0D42AA, #c36570, rgb(245, 86, 86));
 }
 
 .contact__form textarea {
