@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonials";
 const projects = () => {
   const projects = [
     {
+      id: 0,
       name: "Mini Voice",
       image: "/minivoice pic.jpeg",
       imageAlt: "Profile picture",
@@ -15,6 +16,7 @@ const projects = () => {
       inProgress: false,
     },
     {
+      id: 1,
       name: "Cabula.",
       image: "/cabula.png",
       imageAlt: "Profile picture",
@@ -24,6 +26,7 @@ const projects = () => {
       inProgress: true,
     },
     {
+      id: 2,
       name: "University management system",
       image: "/university webapp pic.png",
       imageAlt: "Profile picture",
@@ -40,6 +43,7 @@ const projects = () => {
       <div className={styles.projects__container}>
         {projects.map((project) => (
           <Project
+            key={project.id}
             name={project.name}
             image={project.image}
             imageAlt={project.imageAlt}

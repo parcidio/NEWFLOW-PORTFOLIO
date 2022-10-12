@@ -27,7 +27,7 @@ const Projects = ({
         <p className={styles.project__description}>{description}</p>
         <div className={styles.project__toolList}>
           {tools.map((element) => (
-            <h5>{element}</h5>
+            <h5 key={`${element}`}>{element}</h5>
           ))}
         </div>
         <div className={styles.project__footer}>

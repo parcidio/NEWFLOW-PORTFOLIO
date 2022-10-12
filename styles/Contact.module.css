@@ -38,6 +38,10 @@
     color: var(--muted-text);
 }
 
+.contact__form button:hover {
+    cursor: pointer;
+}
+
 .contact__form button {
     color: var(--white);
     background: linear-gradient(45deg, #0D42AA, #c36570, rgb(245, 86, 86));

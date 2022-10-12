@@ -19,41 +19,20 @@ const Testimonials = () => {
             <div className={styles.testimonial__image}>
               <Image
                 className={styles.image}
-                src="/portfolio_pic.jpeg"
+                src="/augusto.jpg"
                 width={80}
                 height={80}
               />
             </div>
             <div className={styles.testimonial__introduction}>
-              <h3>Theo Sorel</h3>
+              <h3>Augusto Domingos</h3>
               <h4>Designer</h4>
             </div>
           </div>
           <p>
-            I enjoy catching up with Fetch on my laptop, or on my phone when I'm
-            on the go!
-          </p>
-        </div>
-      </div>
-      <div>
-        <div className={styles.myCarousel}>
-          <div className={styles.testimonial__head}>
-            <div className={styles.testimonial__image}>
-              <Image
-                className={styles.image}
-                src="/portfolio_pic.jpeg"
-                width={80}
-                height={80}
-              />
-            </div>
-            <div className={styles.testimonial__introduction}>
-              <h3>Theo Sorel</h3>
-              <h4>Designer</h4>
-            </div>
-          </div>
-          <p>
-            The simple and intuitive design makes it easy for me use. I highly
-            recommend Fetch to my peers.
+            I enjoy working with Parcidio, He is a responsible and hardworking
+            person. He delivers a quality work and is clear and easily
+            understood.
           </p>
         </div>
       </div>
