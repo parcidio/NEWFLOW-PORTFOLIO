@@ -63,19 +63,19 @@ const Testimonials = () => {
             <div className={styles.testimonial__image}>
               <Image
                 className={styles.image}
-                src="/portfolio_pic.jpeg"
+                src="/theron.jpg"
                 width={80}
                 height={80}
               />
             </div>
             <div className={styles.testimonial__introduction}>
-              <h3>Theo Sorel</h3>
-              <h4>Designer</h4>
+              <h3>Theron Kasita</h3>
+              <h4>Developer</h4>
             </div>
           </div>
           <p>
-            It's freeing to be able to catch up on customized news and not be
-            distracted by a social media element on the same site
+            I enjoyed working with Andre, he is a great programmer, team
+            player and motivator.
           </p>
         </div>
       </div>

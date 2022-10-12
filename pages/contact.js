@@ -1,8 +1,43 @@
 import Social from "../components/Social";
 import styles from "../styles/Contact.module.css";
-
+import { useState } from "react";
+import { useRouter } from "next/router";
 const Contact = () => {
-  return (
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  //
+  const [submitterName, setSubmitterName] = useState("");
+  const router = useRouter();
+  const confirmationScreenVisible =
+    router.query?.success && router.query.success === "true";
+  const formVisible = !confirmationScreenVisible;
+  //
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      email,
+      message,
+    };
+    console.log(data);
+  };
+  const ConfirmationMessage = (
+    <>
+      <p>
+        Thank you for submitting this form. Someone should get back to you
+        within 24-48 hours.
+      </p>
+
+      <button
+        onClick={() => router.replace("/contact", undefined, { shallow: true })}
+      >
+        {" "}
+        Submit Another Response{" "}
+      </button>
+    </>
+  );
+  const ContactForm = (
     <div className={styles.contact}>
       <div className={styles.contact__container}>
         <div className={styles.contact__information}>
@@ -16,22 +51,62 @@ const Contact = () => {
           </p>
           <Social />
 
-          <form className={styles.contact__form} onSubmit="">
+          <form
+            className={styles.contact__form}
+            method="POST"
+            name="contact-form"
+            action="contact/?success=true"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact-form" />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
+            <input
+              className={styles.contact__form__inputs}
+              id="name"
+              name="name"
+              required
+              placeholder="your name goes here. . ."
+              onChange={(e) => setSubmitterName(e.target.value)}
+              type="text"
+            />
             <input
               className={styles.contact__form__inputs}
               type="text"
+              name="email"
+              required
               placeholder="your email goes here. . ."
+              onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
               className={styles.contact__form__inputs}
+              name="message"
+              required
               placeholder="your message goes here. . ."
+              onChange={(e) => setMessage(e.target.value)}
             />
-            <button className={styles.contact__form__inputs} type="submit">
+            <button
+              className={styles.contact__form__inputs}
+              type="submit"
+              // onClick={(e) => {
+              //   handleSubmit(e);
+              // }}
+            >
               send message
             </button>
           </form>
         </div>
       </div>
+    </div>
+  );
+  return (
+    <div>
+      <h1>Contact Us</h1>
+      {formVisible ? ContactForm : ConfirmationMessage}
     </div>
   );
 };
