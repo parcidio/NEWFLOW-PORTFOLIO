@@ -50,7 +50,7 @@ const Nav = () => {
               Contact
             </li>
           </Link>
-          {/* <li
+          <li
             className={`Nav_nav__link__zSE_b ${navStyle.nav__link_active} ${navStyle.nav__toggle}`}
             onClick={() => setDarkTheme((previousTheme) => !previousTheme)}
           >
@@ -60,7 +60,7 @@ const Nav = () => {
             ) : (
               <BsMoonFill size={20} />
             )}
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>
