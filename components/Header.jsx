@@ -16,8 +16,8 @@ const Header = () => {
           src="/profile_picture.jpeg"
           alt="Profile picture"
           layout="fill"
-          width={200}
-          height={200}
+          // width={200}
+          // height={200}
         />
       </div>
     </div>
